@@ -1,5 +1,5 @@
 # hal9000
-A simple faux 3D space shooter.
+A simple faux 3D space shooter. Completely software rendered using simple 3D point projection and vector maths.
 
 ## Synopsis
 hal9000 has gone haywire, he is firing plasma at you, luckily for you the plasma is harmless but hal does not know this. You have to disable hal but you cannot shoot directly at him! You have to shoot your plasma, at hal's plasma to make it bounce off in the direction of hal. You must destroy hal as fast as you can, the winner is the player with the lowest time taken.. or if playing alone you should aim to beat your last best time.
