@@ -10,11 +10,14 @@
 
 #include <math.h>
 #include <string.h>
-#include <x86intrin.h>
 
 // #define NOSSE
 #if !defined(__linux__) || defined(NOSSE)
     #define SEIR_RAND
+#endif
+
+#ifndef NOSSE
+    #include <x86intrin.h>
 #endif
 
 #define PI 3.141592741f         // PI
