@@ -208,7 +208,7 @@ void main_loop()
     // draw hal
     orb(s, vec_ftoi(hal.x), vec_ftoi(hal.y), 0.f, 1.f, 320);
 
-    // half if win
+    // halt if win
     if(halt == 1)
     {
         // overlay
