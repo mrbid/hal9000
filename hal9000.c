@@ -185,6 +185,7 @@ void main_loop()
             
             case SDL_QUIT:
             {
+                drawText(NULL, "*K", 0, 0, 0);
                 orb(NULL, 0, 0, 0, 0, -1);
                 SDL_FreeSurface(s);
                 SDL_DestroyWindow(w);
