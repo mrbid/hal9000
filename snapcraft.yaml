@@ -1,0 +1,34 @@
+name: hal9000
+base: core18
+version: '1.0'
+summary: A simple space shooter.
+description: |
+  hal9000 has gone haywire, he is firing plasma at you, luckily for you the plasma is harmless but hal does not know this. You have to disable hal but you cannot shoot directly at him! You have to shoot your plasma, at hal's plasma to make it bounce off in the direction of hal. You must destroy hal as fast as you can, the winner is the player with the lowest time taken.. or if playing alone you should aim to beat your last lowest score.
+
+grade: stable
+confinement: strict
+
+architectures:
+  - build-on: amd64
+    run-on: amd64
+  - build-on: arm64
+    run-on: arm64
+  - build-on: armhf
+    run-on: armhf
+
+apps:
+  snowball:
+    extensions: [gnome-3-34]
+    command: hal9000
+
+parts:
+  snowball:
+    source: https://github.com/mrbid/hal9000
+    source-type: git
+    plugin: make
+    build-packages:
+    - libsdl2-dev
+    stage-packages:
+    - libsdl2-2.0-0
+    - libgles2
+    
