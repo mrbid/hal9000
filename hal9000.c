@@ -337,7 +337,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    w = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1024, 768, SDL_WINDOW_RESIZABLE | SDL_WINDOW_SHOWN);
+    w = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1024, 768, SDL_WINDOW_SHOWN);
     s = SDL_GetWindowSurface(w);
     setScreenMetrics();
     SDL_ShowCursor(0);
