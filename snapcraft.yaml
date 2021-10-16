@@ -17,12 +17,12 @@ architectures:
     run-on: armhf
 
 apps:
-  snowball:
+  hal9000:
     extensions: [gnome-3-34]
     command: hal9000
 
 parts:
-  snowball:
+  hal9000:
     source: https://github.com/mrbid/hal9000
     source-type: git
     plugin: make
