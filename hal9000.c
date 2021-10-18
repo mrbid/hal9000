@@ -263,7 +263,7 @@ void main_loop()
                 vCopy(&pr, comets[i].pos);
                 project(&pr, eyedist);
 
-                float sc = scale(vec_ftoi(comets[i].pos.z));
+                float sc = scale(comets[i].pos.z);
                 if(sc < 0.f)
                 sc = 0.f;
 
