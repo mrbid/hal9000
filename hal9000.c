@@ -90,7 +90,6 @@ void resetcomet(int i)
     comets[i].pos.x = hal.x;
     comets[i].pos.y = hal.y;
     comets[i].pos.z = hal.z;
-    comets[i].dir.z = 1;
     vRuvBT(&comets[i].dir);
     comets[i].dir.z = -randf();
     // I'm not normalising so dir now becomes a random velocity (dir+mag).
@@ -286,7 +285,7 @@ void main_loop()
         vec pr;
         vCopy(&pr, comets[i].pos);
         project(&pr, eyedist);
-        float sc = scale(comets[i].pos.z);
+        float sc = scale(vec_ftoi(comets[i].pos.z));
         if(sc < 0.f)
             sc = 0.f;
         orb(s, vec_ftoi(pr.x), vec_ftoi(pr.y), comets[i].hue, comets[i].sat, sc);
