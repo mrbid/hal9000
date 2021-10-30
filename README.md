@@ -18,6 +18,11 @@ https://snapcraft.io/hal9000
 
 ---
 
+### AppImage
+https://github.com/mrbid/hal9000/raw/main/hal9000-x86_64.AppImage
+
+---
+
 ### Build Prerequisites
 `sudo apt install --assume-yes libsdl2-2.0-0 libsdl2-dev`
 
@@ -39,7 +44,7 @@ sudo make install /usr/bin
 
 ---
 
-### Linux Download
+### Linux Download (Ubuntu 21.04)
 https://github.com/mrbid/hal9000/raw/main/hal9000
 
 ### Windows Download
