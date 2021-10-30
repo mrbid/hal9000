@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=hal9000
+Comment=A simple space shooter.
+StartupNotify=false
+Exec=hal9000
+Icon=${SNAP}/meta/gui/hal9000.png
+Terminal=true
+Type=Application
+Categories=Application;Game;ArcadeGame;
