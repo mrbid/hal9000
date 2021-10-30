@@ -5,6 +5,6 @@ Comment=A simple space shooter.
 StartupNotify=false
 Exec=hal9000
 Icon=${SNAP}/meta/gui/hal9000.png
-Terminal=true
+Terminal=false
 Type=Application
 Categories=Application;Game;ArcadeGame;
