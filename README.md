@@ -50,3 +50,6 @@ https://github.com/mrbid/hal9000/raw/main/hal9000
 ### Windows Download
 https://github.com/mrbid/hal9000/raw/main/hal9000.exe<br>
 https://github.com/mrbid/hal9000/raw/main/SDL2.dll
+
+### Emscripten / WebASM / HTML5 
+https://mrbid.github.io/hal9000/
