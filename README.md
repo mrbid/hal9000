@@ -13,11 +13,6 @@ Just move your mouse and click to fire.
 
 ---
 
-### Emscripten / WebASM / HTML5 
-https://mrbid.github.io/hal9000/ (WARNING: qsort seems to be non-functional in this version, making it harder to play)
-
----
-
 ### Snapcraft / Software Center
 https://snapcraft.io/hal9000
 
@@ -36,6 +31,11 @@ https://github.com/mrbid/hal9000/raw/main/hal9000
 ### Windows Download
 https://github.com/mrbid/hal9000/raw/main/hal9000.exe<br>
 https://github.com/mrbid/hal9000/raw/main/SDL2.dll
+
+---
+
+### Emscripten / WebASM / HTML5 
+https://mrbid.github.io/hal9000/ (WARNING: qsort seems to be non-functional in this version, making it harder to play)
 
 ---
 
