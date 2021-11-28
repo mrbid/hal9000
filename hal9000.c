@@ -10,7 +10,13 @@
         - vec.h:        https://gist.github.com/mrbid/77a92019e1ab8b86109bf103166bd04e
     
     Compile: clang hal9000.c -Ofast -lSDL2 -lm -o hal9000
+    Emscripten: emcc hal9000.c -O3 -s USE_SDL=2 -s ENVIRONMENT=web -o bin/index.html --shell-file t.html
 */
+
+#ifdef __EMSCRIPTEN__
+    #include <emscripten.h>
+    #include <emscripten/html5.h>
+#endif
 
 #include <SDL2/SDL.h>
 #include <stdio.h>
@@ -23,6 +29,10 @@
 
 char name[]="hal9000";
 char status[128];
+
+#ifdef __EMSCRIPTEN__
+    Uint32 lt = 0, fc = 0;
+#endif
 
 #define WIN_INDENT 33
 SDL_Window* w = NULL;
@@ -123,6 +133,10 @@ void setScreenMetrics()
 
 void main_loop()
 {
+#ifdef __EMSCRIPTEN__
+    t = SDL_GetTicks();
+#endif
+
     // input
     SDL_Event event;
     while(SDL_PollEvent(&event))
@@ -347,6 +361,10 @@ int main(int argc, char** argv)
     SDL_FreeSurface(icon);
     reset();
     
+#ifdef __EMSCRIPTEN__
+    lt = SDL_GetTicks() + 1000, fc = 0;
+    emscripten_set_main_loop(main_loop, 0, 1);
+#else
     Uint32 lt = SDL_GetTicks() + 16000, fc = 0;
     while(1)
     {
@@ -363,6 +381,7 @@ int main(int argc, char** argv)
             lt = t + 16000;
         }
     }
+#endif
 
     return 0;
 }
