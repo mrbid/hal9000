@@ -13,6 +13,11 @@ Just move your mouse and click to fire.
 
 ---
 
+### Emscripten / WebASM / HTML5 
+https://mrbid.github.io/hal9000/
+
+---
+
 ### Snapcraft / Software Center
 https://snapcraft.io/hal9000
 
@@ -20,6 +25,17 @@ https://snapcraft.io/hal9000
 
 ### AppImage
 https://github.com/mrbid/hal9000/raw/main/hal9000-x86_64.AppImage
+
+---
+
+### Linux Download (Ubuntu 21.04)
+https://github.com/mrbid/hal9000/raw/main/hal9000
+
+---
+
+### Windows Download
+https://github.com/mrbid/hal9000/raw/main/hal9000.exe<br>
+https://github.com/mrbid/hal9000/raw/main/SDL2.dll
 
 ---
 
@@ -41,15 +57,3 @@ sudo cp hal9000 /usr/bin/hal9000
 make
 sudo make install /usr/bin
 ```
-
----
-
-### Linux Download (Ubuntu 21.04)
-https://github.com/mrbid/hal9000/raw/main/hal9000
-
-### Windows Download
-https://github.com/mrbid/hal9000/raw/main/hal9000.exe<br>
-https://github.com/mrbid/hal9000/raw/main/SDL2.dll
-
-### Emscripten / WebASM / HTML5 
-https://mrbid.github.io/hal9000/
