@@ -14,7 +14,7 @@ Just move your mouse and click to fire.
 ---
 
 ### Emscripten / WebASM / HTML5 
-https://mrbid.github.io/hal9000/
+https://mrbid.github.io/hal9000/ (WARNING: qsort seems to be non-functional in this version, making it harder to play)
 
 ---
 
